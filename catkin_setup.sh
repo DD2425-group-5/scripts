@@ -1,4 +1,7 @@
 #!/bin/bash
+# This script sets up a catkin workspace in the specified directory (should be a home directory),
+# and then adds a line to .bashrc to allow the use of ros commands. The arduino_msgs package is
+# also symlinked to the home directory and then compiled so that it can be used.
 if [ "$#" -eq 0 ]; then
     HOME=~
 else

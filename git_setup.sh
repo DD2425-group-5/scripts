@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/bash 
+# Use this script to configure your git information, and set up an SSH
+# key on GitHub to allow you to commit things to the repository.
 echo "Enter the name to use for commits."
 read NAME
 git config --global user.name "$NAME"
