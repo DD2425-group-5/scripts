@@ -94,4 +94,4 @@ if [ $SKIP -eq 0 ]; then
 fi
 
 echo "---------- REAL RUN ----------"
-rsync -azvP --delete --backup --backup-dir="/backup/$(tr -s ' ' '_' <<< $(date))" --suffix="waught" $SOURCE $USER@$DEST_ADDR:$DEST
+rsync -azvP --delete --backup --backup-dir="/backup/$(tr -s ' ' '_' <<< $(date))" $SOURCE $USER@$DEST_ADDR:$DEST
