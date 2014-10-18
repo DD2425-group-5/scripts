@@ -22,6 +22,8 @@ source devel/setup.bash
 echo "source $HOME/catkin_ws/devel/setup.bash" >> $HOME/.bashrc
 # update the package path so that stuff in catkin is used
 echo "ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/catkin_ws/src"
+# update cmake so that it can find the executables in catkin
+echo "CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:~/catkin_ws/devel"
 # make a symbolic link to the arduino messages so that they can be found by the
 # compiler on the current user.
 ln -s /home/ras/catkin_ws/src/ras_arduino_msgs/ $HOME/catkin_ws/src
